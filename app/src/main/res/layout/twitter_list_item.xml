@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    android:layout_margin="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="128dp"
+            android:layout_height="109dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/sech" />
+
+        <TextView
+            android:id="@+id/tvHandle"
+            android:layout_width="108dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="24dp"
+            tools:text="sech"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTweet"
+            android:layout_width="397dp"
+            android:layout_height="88dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="76dp"
+            android:layout_marginEnd="8dp"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHandle"
+            tools:text="Plant operators are responsible for operating heavy machinery and equipment used in industrial and manufacturing processes—otherwise known as plant. This can involve digging trenches, excavating, crushing rocks, transporting materials and many other tasks." />
+
+        <ImageView
+            android:id="@+id/ivComment"
+            android:layout_width="52dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/ivRetweet"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTweet"
+            app:srcCompat="@drawable/ic_baseline_maps_ugc_24" />
+
+        <ImageView
+            android:id="@+id/ivRetweet"
+            android:layout_width="52dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="76dp"
+            app:layout_constraintEnd_toStartOf="@+id/ivLike"
+            app:layout_constraintTop_toBottomOf="@+id/tvTweet"
+            app:srcCompat="@drawable/ic_baseline_transform_24" />
+
+        <ImageView
+            android:id="@+id/ivLike"
+            android:layout_width="51dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="64dp"
+            app:layout_constraintEnd_toStartOf="@+id/ivShare"
+            app:layout_constraintTop_toBottomOf="@+id/tvTweet"
+            app:srcCompat="@drawable/ic_baseline_favorite_border_24" />
+
+        <ImageView
+            android:id="@+id/ivShare"
+            android:layout_width="48dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTweet"
+            app:srcCompat="@drawable/ic_baseline_share_24" />
+
+        <TextView
+            android:id="@+id/tvNumber1"
+            android:layout_width="14dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            tools:text="2000"
+            app:layout_constraintEnd_toStartOf="@+id/ivRetweet"
+            app:layout_constraintHorizontal_bias="0.17"
+            app:layout_constraintStart_toEndOf="@+id/ivComment"
+            app:layout_constraintTop_toTopOf="@+id/ivRetweet" />
+
+        <TextView
+            android:id="@+id/tvNumber2"
+            android:layout_width="42dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            tools:text="1000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.04"
+            app:layout_constraintStart_toEndOf="@+id/ivRetweet"
+            app:layout_constraintTop_toTopOf="@+id/ivLike" />
+
+        <TextView
+            android:id="@+id/tvNumber3"
+            android:layout_width="33dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            tools:text="390"
+            app:layout_constraintEnd_toStartOf="@+id/ivShare"
+            app:layout_constraintStart_toEndOf="@+id/ivLike"
+            app:layout_constraintTop_toTopOf="@+id/ivShare" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            tools:text="Effence Kamau"
+            app:layout_constraintEnd_toStartOf="@+id/tvHandle"
+            app:layout_constraintHorizontal_bias="0.01"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
